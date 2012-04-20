@@ -296,6 +296,11 @@ $.TokenList = function (input, url_or_data, settings) {
                   hide_dropdown();
                   return true;
 
+                case KEY.ALT:
+                case KEY.SHIFT:
+                case KEY.CTRL:
+                  return false;
+
                 default:
                     if(String.fromCharCode(event.which)) {
                         // set a timeout just long enough to let this function finish.
