@@ -448,6 +448,10 @@ $.TokenList = function (input, url_or_data, settings) {
     this.toggleDisabled = function(disable) {
         toggleDisabled(disable);
     }
+    
+    this.settings = function () {
+	return settings;
+    }
 
     //
     // Private functions
